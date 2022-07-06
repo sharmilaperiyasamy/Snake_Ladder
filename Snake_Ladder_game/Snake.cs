@@ -8,7 +8,7 @@ namespace Snake_Ladder_game
 {
     internal class Snake
     {
-        int pos1 = 0;
+        int pos1 = 0, count = 0;
         int player1;
         public void rollingDice()
         {
@@ -17,6 +17,7 @@ namespace Snake_Ladder_game
             {
                 player1 = rand.Next(0, 7);
                 int option1 = rand.Next(0, 3);
+                count++;
 
                 switch (option1)
                 {
@@ -37,6 +38,7 @@ namespace Snake_Ladder_game
                 {
                     pos1 -= player1;
                 }
+                Console.WriteLine("Position of player1: " + pos1);
             }
         }
     }
