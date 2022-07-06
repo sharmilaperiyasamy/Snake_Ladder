@@ -40,6 +40,7 @@ namespace Snake_Ladder_game
                 }
                 Console.WriteLine("Position of player1: " + pos1);
             }
+            Console.WriteLine("Dice rolled for " + count + "times");
         }
     }
 }
