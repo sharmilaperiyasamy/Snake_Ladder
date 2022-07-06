@@ -14,6 +14,19 @@ namespace Snake_Ladder_game
         {
             Random rand = new Random();
             player1 = rand.Next(0, 7);
+            int option1 = rand.Next(0, 3);
+
+            switch (option1)
+            {
+                case 0:
+                    break;
+                case 1:
+                    pos1 += player1;
+                    break;
+                case 2:
+                    pos1 -= player1;
+                    break;
+            }
         }
     }
 }
